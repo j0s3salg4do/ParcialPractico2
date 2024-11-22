@@ -3,7 +3,7 @@
     <img src= animeLogo.png width= 500px>
     <p>La cantidad total de episodios es 2326 y el rating promedio es 8.03</p>
     <div *ngIf="selected">
-      <app-anime-detail [animeDetail]="selectedBAnime"></app-anime-detail>
+      <app-anime-detail [animeDetail]="selectedAnime"></app-anime-detail>
       <hr>
     </div>
     <div class="col-4" *ngFor="let anime of animes">
