@@ -10,7 +10,7 @@ export class AnimeDetailComponent implements OnInit {
 
   @Input() animeDetail!: Anime;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
   }

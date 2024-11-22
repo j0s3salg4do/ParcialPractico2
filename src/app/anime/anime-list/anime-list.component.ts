@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Anime } from '../anime';
 import { AnimeService } from '../anime.service';
+import {AnimeDetailComponent} from '../anime-detail/anime-detail.component' 
 
 @Component({
   selector: 'app-anime-list',
   templateUrl: './anime-list.component.html',
-  styleUrls: ['./anime-list.component.css']
+  styleUrls: ['./anime-list.component.css'],
+  imports: [AnimeDetailComponent]
 })
 export class AnimeListComponent implements OnInit {
 
@@ -29,4 +31,6 @@ export class AnimeListComponent implements OnInit {
     this.getAnimes();
   }
 
+  getDetail(anime:Anime)
+  {this.getDetail;}
 }
